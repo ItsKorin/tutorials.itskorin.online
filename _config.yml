@@ -1,0 +1,6 @@
+title: Korin | Tutorials
+description: A collection of game developement tutorials and resources
+baseurl: ""
+url: "https://tutorials.itskorin.online
+markdown: kramdown
+theme: jekyll-theme-cayman
