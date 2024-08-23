@@ -59,6 +59,8 @@ header h1 a {
   display: none;
   background: #004d40; /* Darker teal for content area */
   padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
 }
 
 .sidebar .content ul {
