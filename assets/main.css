@@ -3,36 +3,38 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #f0f4f8; /* Light background for a modern look */
 }
 
 header {
-  background: #333;
-  color: #fff;
+  background: #004d40; /* Dark teal background */
+  color: #ffffff;
   padding: 10px 0;
   text-align: center;
 }
 
 header h1 a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
 }
 
 .container {
   display: flex;
+  min-height: 100vh; /* Ensure full height for the footer positioning */
+  margin-bottom: 60px; /* Space for footer */
 }
 
 .sidebar {
   width: 250px;
-  background: #333;
-  color: #fff;
+  background: #00796b; /* Teal background for sidebar */
+  color: #ffffff;
   padding: 10px;
 }
 
 .sidebar .collapsible {
-  background: #444;
+  background: #004d40; /* Darker teal for collapsibles */
   border: none;
-  color: #fff;
+  color: #ffffff;
   padding: 10px;
   width: 100%;
   text-align: left;
@@ -43,7 +45,7 @@ header h1 a {
 
 .sidebar .content {
   display: none;
-  background: #555;
+  background: #004d40; /* Darker teal for content area */
   padding: 10px;
 }
 
@@ -57,7 +59,7 @@ header h1 a {
 }
 
 .sidebar .content ul li a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -67,11 +69,11 @@ main {
 }
 
 footer {
-  background: #333;
-  color: #fff;
+  background: #004d40; /* Match footer background with header */
+  color: #ffffff;
   text-align: center;
   padding: 10px 0;
-  position: absolute;
+  position: fixed; /* Fix to bottom of the page */
   width: 100%;
   bottom: 0;
 }

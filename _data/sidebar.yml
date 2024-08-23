@@ -1,7 +1,6 @@
-- title: Tutorials
+- title: Godot Tutorials
   links:
-    - name: Godot
+    - name: Godot Basics
       url: /godot/
     - name: Custom Godot Nodes
       url: /godot-custom-nodes
-      
