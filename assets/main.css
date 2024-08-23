@@ -25,6 +25,7 @@ header h1 a {
 }
 
 .sidebar {
+  list-style: none;
   width: 250px;
   background: #00796b; /* Teal background for sidebar */
   color: #ffffff;
