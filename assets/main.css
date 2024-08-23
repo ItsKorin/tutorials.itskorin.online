@@ -4,6 +4,9 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f0f4f8; /* Light background for a modern look */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body takes up full height of the viewport */
 }
 
 header {
@@ -13,6 +16,14 @@ header {
   text-align: center;
 }
 
+a{
+  color: burlywood;
+}
+
+header ul{
+  list-style-type: none;
+}
+
 header h1 a {
   color: #ffffff;
   text-decoration: none;
@@ -20,7 +31,9 @@ header h1 a {
 
 .container {
   display: flex;
-  height: 100%;
+  background-color: rgb(50, 100, 75);
+  color: white;
+  flex: 1; /* Allows the container to grow and fill available space */
 }
 
 .sidebar {
@@ -49,8 +62,7 @@ header h1 a {
 }
 
 .sidebar .content ul {
-  list-style: none;
-  list-style-type: none;
+  list-style: none; /* Remove bullet points */
   padding: 0;
 }
 
@@ -61,10 +73,17 @@ header h1 a {
 .sidebar .content ul li a {
   color: #ffffff;
   text-decoration: none;
+  display: block; /* Ensure full width clickable area */
+  padding: 5px 10px; /* Add some padding for better click area */
+}
+
+.sidebar .content ul li a:hover {
+  background: #00695c; /* Slightly lighter teal on hover */
+  border-radius: 5px;
 }
 
 main {
-  flex-grow: 1;
+  flex-grow: 1; /* Allows main content to grow and fill available space */
   padding: 20px;
 }
 
@@ -73,7 +92,6 @@ footer {
   color: #ffffff;
   text-align: center;
   padding: 10px 0;
-  position: fixed; /* Fix to bottom of the page */
+  position: relative; /* Adjust position to ensure it's at the bottom */
   width: 100%;
-  bottom: 0;
 }
