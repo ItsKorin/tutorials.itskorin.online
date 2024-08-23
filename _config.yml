@@ -3,4 +3,8 @@ description: A collection of game developement tutorials and resources
 baseurl: ""
 url: "https://tutorials.itskorin.online"
 markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    default_lang: gdscript
 theme: jekyll-theme-cayman
