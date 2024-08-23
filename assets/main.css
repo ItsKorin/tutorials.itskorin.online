@@ -20,12 +20,10 @@ header h1 a {
 
 .container {
   display: flex;
-  min-height: 100vh; /* Ensure full height for the footer positioning */
-  margin-bottom: 60px; /* Space for footer */
+  height: 100%;
 }
 
 .sidebar {
-  list-style: none;
   width: 250px;
   background: #00796b; /* Teal background for sidebar */
   color: #ffffff;
@@ -51,6 +49,7 @@ header h1 a {
 }
 
 .sidebar .content ul {
+  list-style: none;
   list-style-type: none;
   padding: 0;
 }
