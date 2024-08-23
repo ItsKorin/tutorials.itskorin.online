@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <script src="{{ "/assets/main.js" | relative_url }}"></script>
+</head>
+<body>
+  <header>
+    <h1><a href="{{ "/" | relative_url }}">{{ site.title }}</a></h1>
+    <nav>
+      <ul>
+        <li><a href="{{ "/" | relative_url }}">Home</a></li>
+        <li><a href="{{ "/tutorials.html" | relative_url }}">Tutorials</a></li>
+        <li><a href="{{ "/about.html" | relative_url }}">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="container">
+    <aside class="sidebar">
+      <button class="collapsible">Section 1</button>
+      <div class="content">
+        <ul>
+          <li><a href="#">Subsection 1.1</a></li>
+          <li><a href="#">Subsection 1.2</a></li>
+        </ul>
+      </div>
+      
+      <button class="collapsible">Section 2</button>
+      <div class="content">
+        <ul>
+          <li><a href="#">Subsection 2.1</a></li>
+          <li><a href="#">Subsection 2.2</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <main>
+      {{ content }}
+    </main>
+  </div>
+  
+  <footer>
+    <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
+  </footer>
+</body>
+</html>
