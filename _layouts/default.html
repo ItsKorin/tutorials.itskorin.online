@@ -20,21 +20,16 @@
   
   <div class="container">
     <aside class="sidebar">
-      <button class="collapsible">Section 1</button>
-      <div class="content">
-        <ul>
-          <li><a href="#">Subsection 1.1</a></li>
-          <li><a href="#">Subsection 1.2</a></li>
-        </ul>
-      </div>
-      
-      <button class="collapsible">Section 2</button>
-      <div class="content">
-        <ul>
-          <li><a href="#">Subsection 2.1</a></li>
-          <li><a href="#">Subsection 2.2</a></li>
-        </ul>
-      </div>
+      {% for section in site.data.sidebar %}
+        <button class="collapsible">{{ section.title }}</button>
+        <div class="content">
+          <ul>
+            {% for link in section.links %}
+              <li><a href="{{ link.url }}">{{ link.name }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
     </aside>
 
     <main>
