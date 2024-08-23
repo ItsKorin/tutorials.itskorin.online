@@ -5,6 +5,5 @@ url: "https://tutorials.itskorin.online"
 markdown: kramdown
 kramdown:
   input: GFM
-  syntax_highlighter_opts:
-    default_lang: gdscript
+  syntax_highlighter: rouge
 theme: jekyll-theme-cayman
